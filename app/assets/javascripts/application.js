@@ -14,3 +14,4 @@
 //= require bootstrap
 //= require rendzinacapital
 //= require pureSlider
+//= require app

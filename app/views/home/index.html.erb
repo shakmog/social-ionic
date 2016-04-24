@@ -24,10 +24,10 @@
     </div>
     <div class="clearfix"></div>
      <container>
-			<slide style="background-image: url('assets/about_banner.jpg')"><span>Welcome to Rendzina </span></slide>
-			<slide style="background-image: url('assets/Epaper_5086_aimg2_0.jpg')"><span>We love what we do </span></slide>
-			<slide style="background-image: url('assets/Fotolia_50400170_Subscription_Monthly_M.jpg')"><span>We do I.T </span></slide>
-			<slide style="background-image: url('assets/slider2.jpg')"><span> We make your Businesses run better</span></slide>
+			<slide style="background-image: url('assets/about_banner.jpg')"><span>&nbsp; </span></slide>
+			<slide style="background-image: url('assets/Epaper_5086_aimg2_0.jpg')"><span>&nbsp;</span></slide>
+			<slide style="background-image: url('assets/Fotolia_50400170_Subscription_Monthly_M.jpg')"><span>&nbsp; </span></slide>
+			<slide style="background-image: url('assets/slider2.jpg')"><span>&nbsp;</span></slide>
       	<slide style="background-image: url('assets/banner2.jpg')"><span> &nbsp;</span></slide>
 			<div class="next">&rtrif;</div>
 			<div class="prev">&ltrif;</div>
@@ -49,11 +49,23 @@
 
    </div>
 
-    <div class="container">
-            <!--<center>
-                <h3 class="design">Our Services <br/><i class="fa fa-arrow-circle-o-down"></i></h3>
-                <hr/>
-            </center>-->
+    <div >
+            <div class="real-time-contact">
+              <h4 class="design" style="padding:0px;margin:0px;"> Contact: </h4><i class="fa fa-phone"></i> <b>+2349054660000</b><br/>
+              <%= link_to root_path, class: 'send_enq' do %>
+                 <font class="color-green"><i class="fa fa-envelope-o"></i> Send Enquiry</font>
+              <% end %>
+            </div>
+            <div class="container center" style="width: 50%;">
+              <br/><br/>
+              <p>
+            In today’s world, Enterprises, Entrepreneurs and Governments are in dire need of Strategic and Proactive systems to growth and development and Rendzina LTD is here to fill that need.
+          </p>
+            <p>
+Rendzina LTD creates effective Management and Technology solutions that help organizations improve productivity.
+We are an Enterprise Development Consulting Company helping clients develop their businesses with tools in Management Consulting and Technology applications.
+</p>
+      </div>
         </div>
         <div class="rows container">
            <div class="col-md-4">
@@ -69,18 +81,20 @@
                       view more <i class="fa fa-arrow-circle-right"></i>
                    <% end %>
                </p>
-
+          
            </div>
 
            <div class="col-md-4">
              <div class="circle-image">
-                <%= link_to image_tag "agrinvest", width:"100%" %>
+                <%= link_to(whatwedo_agrinvest_path) do %>
+                <%= image_tag "agrinvest", width:"100%" %>
+                <% end %>
              </div>
              <h4 class="design center"> Agrinvest </h4>
              <p class="center">
                 Agrinvest is an agricultural investment and development solution designed to foster agro-preneurship (Agricultural Entrepreneurship) and develop opportunities in the agricultural sector into sustainable and competitive enterprises.
                 <br/>
-                <%= link_to root_path, class: "btn btn-warning btn-sm" do %>
+                <%= link_to whatwedo_agrinvest_path, class: "btn btn-warning btn-sm" do %>
                    view more <i class="fa fa-arrow-circle-right"></i>
                 <% end %>
              </p>
@@ -113,7 +127,7 @@
 <section class="mission-style">
   <div class="container">
           <center>
-              <h3 class="design"> Mission &amp; Vision <br/><i class="fa fa-arrow-circle-o-down"></i></h3>
+              <h3 class="design"> Why Rendzina ? <br/><i class="fa fa-arrow-circle-o-down"></i></h3>
               <hr/>
           </center>
 
@@ -151,13 +165,16 @@ Rendzina Capital is that organization of intrinsic excellence, committed people 
     <div class="container designer" >
           <div style="width: 100%; max-width: 600px;margin:50px auto;">
          <center>
-             <h3 class="Google-font"> Resources </h3>
+             <h3 class="Google-font"> Resourcesgggggggggggggg </h3>
              <p>
                Our bank of resources is an archive of insightful articles that does more than inform but revolutionize our thinking processes.
 
  Here we place in your hands, the power of knowledge with which you can transform your personal life and business.
 
-
+              <br/> <br/>
+              <%= link_to root_path, class: "btn btn-success btn-lg" do %>
+                <b><i class="fa fa-comments"></i> View Our Blog </b>
+               <% end %>
              </p>
          </center>
           </div>

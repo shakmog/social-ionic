@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get 'whatwedo/technology'
 
+  get 'whatwedo/agrinvest'
+
   get 'home/index'
 
   get 'aboutus' => "home#aboutus"

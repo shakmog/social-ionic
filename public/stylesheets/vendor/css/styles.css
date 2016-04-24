@@ -19,9 +19,38 @@ body {
     background: url('../../../assets/layer4_bg_rpt.jpg');
 }
 
+.real-time-contact {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  position: fixed;
+  z-index: 10000;
+  right: -0px;
+  color: #FFF;
+}
+
+.color-brown {
+  color: brown;
+}
+
+.color-green {
+  color: yellowgreen;
+}
+
+.links a{
+  transition: color 1s ease-in;
+  -webkit-transition: color 1s ease-in;
+  -moz-transition: color 1s ease-in;
+  color: #666;
+}
+
+.links a:hover {
+   color: yellowgreen;
+}
+
+
 .circle-image{
-    margin:30px auto;
     overflow: hidden;
+    margin:30px auto;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -29,7 +58,24 @@ body {
     text-align: center;
     padding-top: 0px;
     background: #FFF;
+    transition: border 0.5s ease-in;
+    -webkit-transition: border 0.5s ease-in;
+    -moz-transition: border 0.5s ease-in;
 }
+
+.circle-image:hover{
+    opacity: 0.8;
+    border-color: yellowgreen;
+    box-shadow: 5px 5px 5px #000;
+    overflow: hidden;
+}
+
+.circle-image a img{
+    overflow: hidden;
+}
+
+
+
 
 .circle-small {
   margin:30px auto;
@@ -50,9 +96,7 @@ body {
   padding-bottom: 20px;
 }
 
-.circle-image:hover {
-    opacity: 0.8;
-}
+
 
 .center {
   text-align: center;

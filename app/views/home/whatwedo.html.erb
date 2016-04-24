@@ -38,7 +38,7 @@
 
          <div class="container">
            <center>
-               <h3 class="design">Our Strength <br/><i class="fa fa-arrow-circle-o-down"></i></h3>
+               <h3 class="design">What we do  <br/><i class="fa fa-arrow-circle-o-down"></i></h3>
                <hr/>
            </center>
            <p class="justify">
@@ -46,7 +46,7 @@
 
            	<p>We are aware that the process of the transformation of goals, ideas and strategic aspirations in business is no easy task. To succeed in today's environment, businesses and governments need to lead through increased complexity and volatility, drive operational excellence and engage collaboration across enterprise functions and we are here to help them do so profitably.</p>
 
-           	<p>At Rendzina Capital, we integrate management consulting expertise with the science of enterprise development to arrive at a bouquet of solutions filtered into Social Networking, Consulting & Technology.</p>
+           	<p>At Rendzina Capital, we integrate management consulting expertise with the science of enterprise development to arrive at a bouquet of solutions filtered into <%= link_to "Social Networking",  whatwedo_social_path, class: "color-green" %>, <%= link_to "Consulting & Technology", whatwedo_consulting_path, class: "color-green" %>.</p>
 
            	<p>Leveraging on our diverse functional expertise, we offer all our business clients a wide range of services to support critical aspects of their business.</p>
 
@@ -54,28 +54,66 @@
         </div>
 
 
-        <div class="rows container">
+        <div class="rows container links">
            <div class="col-md-4">
+             <%= link_to whatwedo_social_path do %>
+                 <div class="circle-image">
+                    <%= image_tag "business_starter", width:"100%" %>
+                 </div>
+                 <h4 class="design center"> Networking </h4>
+               <% end %>
+           </div>
 
+           <div class="col-md-4">
+             <%= link_to whatwedo_consulting_path do %>
+                 <div class="circle-image">
+                    <%= image_tag "agrinvest", width:"100%" %>
+                 </div>
+                 <h4 class="design center"> Consulting </h4>
+             <% end %>
+           </div>
+
+           <div class="col-md-4">
+             <%= link_to whatwedo_technology_path do %>
                <div class="circle-image">
-                  <%= link_to image_tag "business_starter", width:"100%" %>
+                  <%= image_tag "organic_plan", width:"100%" %>
                </div>
-               <h4 class="design center"> Business Starter </h4>
+                <h4 class="design center"> Technology </h4>
+            <% end %>
+           </div>
+
+           <div class="clearfix"></div>
+        </div>
+
+
+        <%# -- This is the new section for other services %>
+
+        <div class="rows container links">
+           <div class="col-md-4">
+             <%= link_to root_path do %>
+                 <div class="circle-image">
+                    <%= image_tag "business_starter", width:"100%" %>
+                 </div>
+                 <h4 class="design center"> Business Starter </h4>
+              <% end %>
            </div>
 
            <div class="col-md-4">
-             <div class="circle-image">
-                <%= link_to image_tag "agrinvest", width:"100%" %>
-             </div>
-             <h4 class="design center"> Agrinvest </h4>
+             <%= link_to whatwedo_agrinvest_path do %>
+                 <div class="circle-image">
+                    <%= image_tag "agrinvest", width:"100%" %>
+                 </div>
+                 <h4 class="design center"> Agrinvest </h4>
+             <% end %>
            </div>
 
            <div class="col-md-4">
-
-             <div class="circle-image">
-                <%= link_to image_tag "organic_plan", width:"100%" %>
-             </div>
-              <h4 class="design center"> Organic Plan </h4>
+             <%= link_to root_path do %>
+               <div class="circle-image">
+                  <%= image_tag "organic_plan", width:"100%" %>
+               </div>
+                <h4 class="design center"> Organic Plan </h4>
+            <% end %>
            </div>
 
            <div class="clearfix"></div>
@@ -89,11 +127,15 @@
     <div class="container designer" >
           <div style="margin:50px auto;" class="container">
          <center>
-             <h3 class="Google-font"> Twitter Tweet </h3>
+             <h3 class="Google-font"> Why Rendzina ? </h3>
         </center>
              <p class="justify">
 
-              &nbsp;
+               From a deep and conscious discovery of innate abilities and capacities, together with a heartfelt intention to make a contribution to the advancement of society, the Rendzina Capital has emerged.
+
+   We have observed the needs of our time and the yearning of our soul to sprout a harvest of solutions and services meeting man's quest for profitable engagement in Business and Entrepreneurship.
+
+   Rendzina Capital is that organization of intrinsic excellence, committed people with a positive and learning culture springing up superior Socio-Management Services and IT Solutions that foster growth and stability for all business people.
 
              </p>
 
