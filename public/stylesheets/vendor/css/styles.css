@@ -191,7 +191,7 @@ body {
 
     padding-top: 5px;
     padding-bottom: 5px;
-    background: #000;
+    background: linear-gradient(to right, white, black);
     border-bottom: 3px solid yellowgreen;
 
 }
