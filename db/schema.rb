@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160425175926) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "associates", force: true do |t|
     t.string   "surname"
     t.string   "other_names"
