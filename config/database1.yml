@@ -1,0 +1,16 @@
+
+development:
+  adapter: 	postgresql
+  database: rendzina_development
+  host: 	localhost
+  username: shak
+  password: 
+  encoding: utf8
+
+staging:
+  adapter: 	postgresql
+  database: rendzina_staging
+  host: 	localhost
+  username: shak
+  password: 
+  encoding: utf8
