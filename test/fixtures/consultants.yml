@@ -18,6 +18,11 @@ one:
   hobbies: MyText
   telephone: MyString
   email: MyString
+  company_name: MyString
+  company_business: MyString
+  area_of_interest: MyText
+  registered: false
+  registration_details: MyString
 
 two:
   surname: MyString
@@ -37,3 +42,8 @@ two:
   hobbies: MyText
   telephone: MyString
   email: MyString
+  company_name: MyString
+  company_business: MyString
+  area_of_interest: MyText
+  registered: false
+  registration_details: MyString

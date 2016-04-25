@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   
+  resources :associates
+
   resources "contacts", only: [:new, :create]
   
   resources :consultants
-
-  resources :associates
 
   get 'comments/create'
 

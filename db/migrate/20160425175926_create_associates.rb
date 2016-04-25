@@ -4,7 +4,7 @@ class CreateAssociates < ActiveRecord::Migration
       t.string :surname
       t.string :other_names
       t.date :dob
-      t.text :contact_address
+      t.text :contact_add
       t.string :sec_institution
       t.string :sec_certificate
       t.date :sec_date

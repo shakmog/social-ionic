@@ -1,0 +1,57 @@
+<h1>Listing associates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Surname</th>
+      <th>Other names</th>
+      <th>Dob</th>
+      <th>Contact add</th>
+      <th>Sec institution</th>
+      <th>Sec certificate</th>
+      <th>Sec date</th>
+      <th>Uni institution</th>
+      <th>Uni certificate</th>
+      <th>Uni date</th>
+      <th>Other institution</th>
+      <th>Other certificate</th>
+      <th>Other date</th>
+      <th>Personal statement</th>
+      <th>Hobbies</th>
+      <th>Telephone</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @associates.each do |associate| %>
+      <tr>
+        <td><%= associate.surname %></td>
+        <td><%= associate.other_names %></td>
+        <td><%= associate.dob %></td>
+        <td><%= associate.contact_add %></td>
+        <td><%= associate.sec_institution %></td>
+        <td><%= associate.sec_certificate %></td>
+        <td><%= associate.sec_date %></td>
+        <td><%= associate.uni_institution %></td>
+        <td><%= associate.uni_certificate %></td>
+        <td><%= associate.uni_date %></td>
+        <td><%= associate.other_institution %></td>
+        <td><%= associate.other_certificate %></td>
+        <td><%= associate.other_date %></td>
+        <td><%= associate.personal_statement %></td>
+        <td><%= associate.hobbies %></td>
+        <td><%= associate.telephone %></td>
+        <td><%= associate.email %></td>
+        <td><%= link_to 'Show', associate %></td>
+        <td><%= link_to 'Edit', edit_associate_path(associate) %></td>
+        <td><%= link_to 'Destroy', associate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Associate', new_associate_path %>

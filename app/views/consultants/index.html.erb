@@ -1,0 +1,67 @@
+<h1>Listing consultants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Surname</th>
+      <th>Other names</th>
+      <th>Dob</th>
+      <th>Contact add</th>
+      <th>Sec institution</th>
+      <th>Sec certificate</th>
+      <th>Sec date</th>
+      <th>Uni institution</th>
+      <th>Uni certificate</th>
+      <th>Uni date</th>
+      <th>Other institution</th>
+      <th>Other certificate</th>
+      <th>Other date</th>
+      <th>Personal statement</th>
+      <th>Hobbies</th>
+      <th>Telephone</th>
+      <th>Email</th>
+      <th>Company name</th>
+      <th>Company business</th>
+      <th>Area of interest</th>
+      <th>Registered</th>
+      <th>Registration details</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @consultants.each do |consultant| %>
+      <tr>
+        <td><%= consultant.surname %></td>
+        <td><%= consultant.other_names %></td>
+        <td><%= consultant.dob %></td>
+        <td><%= consultant.contact_add %></td>
+        <td><%= consultant.sec_institution %></td>
+        <td><%= consultant.sec_certificate %></td>
+        <td><%= consultant.sec_date %></td>
+        <td><%= consultant.uni_institution %></td>
+        <td><%= consultant.uni_certificate %></td>
+        <td><%= consultant.uni_date %></td>
+        <td><%= consultant.other_institution %></td>
+        <td><%= consultant.other_certificate %></td>
+        <td><%= consultant.other_date %></td>
+        <td><%= consultant.personal_statement %></td>
+        <td><%= consultant.hobbies %></td>
+        <td><%= consultant.telephone %></td>
+        <td><%= consultant.email %></td>
+        <td><%= consultant.company_name %></td>
+        <td><%= consultant.company_business %></td>
+        <td><%= consultant.area_of_interest %></td>
+        <td><%= consultant.registered %></td>
+        <td><%= consultant.registration_details %></td>
+        <td><%= link_to 'Show', consultant %></td>
+        <td><%= link_to 'Edit', edit_consultant_path(consultant) %></td>
+        <td><%= link_to 'Destroy', consultant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Consultant', new_consultant_path %>

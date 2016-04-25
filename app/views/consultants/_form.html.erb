@@ -1,0 +1,32 @@
+<%= simple_form_for(@consultant) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :surname %>
+    <%= f.input :other_names %>
+    <%= f.input :dob %>
+    <%= f.input :contact_add %>
+    <%= f.input :sec_institution %>
+    <%= f.input :sec_certificate %>
+    <%= f.input :sec_date %>
+    <%= f.input :uni_institution %>
+    <%= f.input :uni_certificate %>
+    <%= f.input :uni_date %>
+    <%= f.input :other_institution %>
+    <%= f.input :other_certificate %>
+    <%= f.input :other_date %>
+    <%= f.input :personal_statement %>
+    <%= f.input :hobbies %>
+    <%= f.input :telephone %>
+    <%= f.input :email %>
+    <%= f.input :company_name %>
+    <%= f.input :company_business %>
+    <%= f.input :area_of_interest %>
+    <%= f.input :registered %>
+    <%= f.input :registration_details %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
