@@ -365,3 +365,7 @@ footer {
     font-size: 10px;
     padding: 5px;
 }
+
+a.logo_1 img {
+  width: 90px;
+}

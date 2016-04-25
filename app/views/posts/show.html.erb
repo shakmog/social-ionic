@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+
+<h1><%= @post.title %></h1>
+<% if @post.avatar? %>
+  <%= image_tag @post.avatar.url %>
+<% end %>
+<h4><%= @post.message %></h4>
+
+<h5>Comments</h5>
+<hr>
+
+<%= @post.comments.each do |comment| %>
+	<p><%= comment.comment %></p>
+	<p><%= time_ago_in_words comment.created_at %> ago</p>
+	<p><%= link_to 'Delete Comment', [@post, comment], :method => :delete, :confirm => 'Are you sure?' %></p>
+	<hr>
+<% end %>
+
+<%= form_for [@post, @post.comments.build] do |f| %>
+	<p><%= f.text_area :comment, size: "40x10" %></p>
+	<p><%= f.submit "Post Comment" %></p>
+<% end %>
+
+<p>
+<%= link_to 'Back', posts_path %>
+
+</p>

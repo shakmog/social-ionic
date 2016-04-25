@@ -1,4 +1,19 @@
 Rails.application.routes.draw do
+  
+  resources "contacts", only: [:new, :create]
+  
+  resources :consultants
+
+  resources :associates
+
+  get 'comments/create'
+
+  get 'comments/destroy'
+
+  resources :posts, :path => 'blog' do
+    resources :comments
+  end
+
 
   get 'careers/associate'
 
@@ -10,8 +25,6 @@ Rails.application.routes.draw do
 
   get 'whatwedo/technology'
 
-  get 'whatwedo/agrinvest'
-
   get 'home/index'
 
   get 'aboutus' => "home#aboutus"
@@ -19,18 +32,14 @@ Rails.application.routes.draw do
   get 'whatwedo' => "home#whatwedo"
 
   get 'careers' => "home#careers"
-
+  
   get 'starter' => "home#starter"
-
+  
   get 'agrinvest' => "home#agrinvest"
-
+  
   get 'gaae' => "home#gaae"
-
+  
   get 'organic' => "home#organic"
-
-  get 'blog' => "home#blog"
-
-  #get 'contact' => "home#contact"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -7,7 +7,7 @@
   <div class="container">
    <div class="col-md-4">
 
-         <%= link_to image_tag("rendzina_logo1.png"), root_path %>
+         <%= link_to image_tag("rendzina_logo.png"), root_path, { :class => "logo_1" }%>
 
    </div>
    <div class="col-md-8">
@@ -54,7 +54,7 @@
            class="active"
         <% end %>>
             <!--<a href="#"> Blog </a>-->
-            <%= link_to 'Blog', blog_path %>
+            <%= link_to 'Blog', posts_path %>
         </li>
         <li <% if page === '/careers' || page ==='/careers/associate' || page === '/careers/independent' %>
           class="active"

@@ -1,0 +1,17 @@
+<div class="container" style="margin-left:30px;">
+  <h1>Rendzina Blog</h1>
+  <hr>
+
+  <% @posts.each do |post| %>
+    <h4><%= link_to post.title, post %></h4>
+    <% if post.avatar? %>
+      <%= image_tag post.avatar.url(:medium) %>
+    <% end %>
+    <p><%= truncate post.message %></p>
+    <p><%= time_ago_in_words post.created_at %> ago</p>  
+    <p><%= post.comments.count %> comments</p>  
+    <hr>
+  <% end %>
+
+  <%= link_to 'New Post', new_post_path %>
+</div>

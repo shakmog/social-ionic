@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160202175118) do
+ActiveRecord::Schema.define(version: 20160425150229) do
 
   create_table "associates", force: true do |t|
     t.string   "surname"
@@ -31,6 +31,13 @@ ActiveRecord::Schema.define(version: 20160202175118) do
     t.text     "hobbies"
     t.string   "telephone"
     t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "comments", force: true do |t|
+    t.integer  "post_id"
+    t.text     "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -60,6 +67,17 @@ ActiveRecord::Schema.define(version: 20160202175118) do
     t.string   "registration_details"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "posts", force: true do |t|
+    t.string   "title"
+    t.text     "message"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "avatar_file_name"
+    t.integer  "avatar_file_size"
+    t.string   "avatar_content_type"
+    t.datetime "avatar_updated_at"
   end
 
 end
