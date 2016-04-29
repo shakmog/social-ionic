@@ -3,7 +3,7 @@
 
 <h1><%= @post.title %></h1>
 <% if @post.avatar? %>
-  <%= image_tag @post.avatar.url %>
+  <%= image_tag @post.avatar.url(:show) %>
 <% end %>
 <h4><%= @post.message %></h4>
 
