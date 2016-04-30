@@ -1,0 +1,371 @@
+
+@font-face {
+  font-family: 'Sans Font';
+  src: url("../../fonts/Dosis-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: 'nex Font';
+  src: url("../../fonts/BenchNine-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Google Font';
+    src: url("../../fonts/Google.woff") format('woff');
+}
+
+body {
+
+    background: url('../../../assets/layer4_bg_rpt.jpg');
+}
+
+.real-time-contact {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  position: fixed;
+  z-index: 10000;
+  right: -0px;
+  color: #FFF;
+}
+
+.color-brown {
+  color: brown;
+}
+
+.color-green {
+  color: yellowgreen;
+}
+
+.links a{
+  transition: color 1s ease-in;
+  -webkit-transition: color 1s ease-in;
+  -moz-transition: color 1s ease-in;
+  color: #666;
+}
+
+.links a:hover {
+   color: yellowgreen;
+}
+
+
+.circle-image{
+    overflow: hidden;
+    margin:30px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #666;
+    text-align: center;
+    padding-top: 0px;
+    background: #FFF;
+    transition: border 0.5s ease-in;
+    -webkit-transition: border 0.5s ease-in;
+    -moz-transition: border 0.5s ease-in;
+}
+
+.circle-image:hover{
+    opacity: 0.8;
+    border-color: yellowgreen;
+    box-shadow: 5px 5px 5px #000;
+    overflow: hidden;
+}
+
+.circle-image a img{
+    overflow: hidden;
+}
+
+
+
+
+.circle-small {
+  margin:30px auto;
+  overflow: hidden;
+  width: 100px;
+  max-width: 100%;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  text-align: center;
+  padding-top: 10px;
+  background: #FFF;
+}
+
+.testimonies-style1 {
+  border-top: 2px solid yellowgreen;
+  height: 250px;
+  padding-bottom: 20px;
+}
+
+
+
+.center {
+  text-align: center;
+}
+
+.Google-font {
+
+    font-family: 'Sans Font';
+}
+
+.navbar-default {
+
+    background: transparent !important;
+    border-color: transparent;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text{
+
+    color: #FFFFFF;
+    font-family: 'Google Font';
+    transition: .5s all;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+
+    border-bottom: 2px solid #545454;
+    color: yellowgreen;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+
+  color: yellowgreen;
+  border-bottom: 2px solid #203b10;
+  background: transparent;
+  border-radius: 0px;
+}
+
+/* line 104, ../scss/styles.scss */
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: yellowgreen;
+}
+
+/* line 110, ../scss/styles.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+/* line 116, ../scss/styles.scss */
+.navbar-default .navbar-toggle {
+  background: yellowgreen;
+  border-color: white;
+  color: white !important;
+}
+
+/* line 123, ../scss/styles.scss */
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: greenyellow;
+  border-color: #FFF;
+  color: white;
+}
+
+/* line 130, ../scss/styles.scss */
+.navbar-toggle {
+  color: black !important;
+}
+
+/* line 135, ../scss/styles.scss */
+.navbar-toggle:before {
+  color: #de0b2b;
+}
+
+/* line 140, ../scss/styles.scss */
+.navbar-default {
+  background: transparent;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > .divider, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+
+    background-color: transparent;
+}
+
+.header-section {
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: linear-gradient(to right, white 1%, black);
+    border-bottom: 3px solid yellowgreen;
+
+}
+
+.website-title {
+
+   position: absolute;
+   z-index: 1000;
+
+}
+
+.navs-social a {
+
+   color: #ccc;
+   transition: 1s all;
+   -webkit-transition: 1s all;
+   -moz-transition: 1s all;
+}
+
+.navs-social a:hover {
+
+    color: #FFF;
+}
+
+.inner-text {
+    margin: auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    font-family: 'Google Font';
+    color: #FFF;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 100%;
+}
+
+.design {
+
+    font-family: 'Google Font';
+}
+
+h3.design {
+    color: yellowgreen;
+}
+
+.block {
+    margin-top: 3px;
+}
+
+.slider-section{
+    max-height: 450px;
+    height: 100%;
+    overflow:hidden;
+}
+
+.image-placeholder {
+
+  width: 100%;
+  background:url('../../../assets/about_banner.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height:450px
+}
+
+.content-section {
+
+    background: url('../../../assets/layer3_bg_rpt.jpg') repeat-x;
+}
+
+.link-design {
+
+    color: yellowgreen;
+    border: 2px solid yellowgreen;
+    padding: 5px;
+    border-radius: 20px;
+    transition: 1s all;
+    -webkit-transition: .2s all;
+    -moz-transition: 1s all;
+}
+
+.link-design:hover {
+
+    color: #ccc !important;
+    border: 2px solid #555;
+}
+
+.testimonies-section {
+
+     min-height: 300px;
+     border-top: 2px solid yellowgreen;
+     border-bottom: 2px solid yellowgreen;
+     background: url('../../../assets/about_banner.jpg') center;
+     /*background-position: center;*/
+     margin-top: 15px;
+}
+
+.designer {
+
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    color: #FFF;
+}
+
+footer {
+
+    padding-top: 25px;
+    border-top: 4px solid yellowgreen;
+    /*background:*/
+    background: #000;
+}
+
+.mission-style{
+  border-top: 2px solid #999;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  background: #000;
+}
+
+.mission-style p {
+  color: #FFF;
+}
+
+.bg-color-black {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #666;
+    margin-top: 6px;
+}
+
+.footer-links{
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-links li {
+
+    display: block;
+    padding: 5px;
+}
+
+.footer-links li b {
+
+    display: block;
+    color: yellowgreen;
+    border-bottom: 1px solid #666;
+    border-right: 3px solid #666;
+    border-bottom-right-radius: 30px;
+}
+
+.footer-links li a {
+
+    color: #666;
+    display: block;
+}
+
+.footer-links li a:hover {
+
+    text-decoration: underline;
+    color: #FFF;
+    display:block;
+}
+
+.base-footer {
+    display: block;
+    font-size: 10px;
+    padding: 5px;
+}
+
+a.logo_1 img {
+  width: 90px;
+}

@@ -1,0 +1,230 @@
+<section class="slider-section">
+     <div class="image-placeholder">
+
+        <div class="inner-text animated flipInX">
+            <h3> Careers </h3>
+          <span class="navs-social">
+            <a href="<%= "http://facebook.com/rendzinaltd" %>" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a> &nbsp; &nbsp;
+        <a href="<%= "http://twitter.com/rendzinaltd" %>" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+            &nbsp; &nbsp;
+            <a href="<%= "https://www.linkedin.com/company/5143538?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A5143538%2Cidx%3A1-1-1%2CtarId%3A1461678678178%2Ctas%3ARendzina" %>" target="_blank">
+
+                <i class="fa fa-linkedin"></i>
+            </a>
+          </span>
+            <br/><br/>
+            <a href="<%= aboutus_path %>" class="link-design"><b> Read More <i class="fa fa-arrow-circle-right"></i> </b></a> <br/> <br/>
+        </div>
+     </div>
+    <div class="col-md-3">
+
+    </div>
+    <div class="clearfix"></div>
+    <div style="height: 200px;">
+
+    </div>
+</section>
+
+<section class="content-section">
+
+   <div class="container">
+     <div class="real-time-contact">
+       <h4 class="design" style="padding:0px;margin:0px;"> Contact: </h4><i class="fa fa-phone"></i> <b>+234-90-54-66-0000</b><br/>
+       <%= link_to root_path, class: 'send_enq' do %>
+          <font class="color-green"><i class="fa fa-envelope-o"></i> Send Enquiry</font>
+       <% end %>
+     </div>
+   </div>
+   <div class="container">
+       <center>
+           <h3 class="design">Listing consultants <br/><i class="fa fa-arrow-circle-down"></i></h3>
+           <hr/>
+
+      </center>
+
+<div class="col-md-6 col-md-offset-3">
+
+
+<table class="table" style="background: #ccc">
+  <% @consultants.each do |consultant| %>
+  <tr bgcolor="#FFF">
+    <th>
+      Surname
+    </th>
+    <td> <%= consultant.surname %> </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Other Names
+    </th>
+    <td> <%= consultant.other_names %> </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      D.O.B
+    </th>
+      <td> <%= consultant.dob %> </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Contact Add
+    </th>
+    <td> <%= consultant.contact_add %> </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Sec Institution
+    </th>
+    <td> <%= consultant.sec_institution %> </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Sec Certificate
+    </th>
+      <td> <%= consultant.sec_certificate %> </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Sec Date
+    </th>
+    <td> <%= consultant.sec_date %> </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Uni institution
+    </th>
+    <td> <%= consultant.uni_institution %></td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Uni Certificate
+    </th>
+    <td> <%= consultant.uni_certificate %> </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Uni Date
+    </th>
+    <td> <%= consultant.uni_date %> </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Other Institute
+    </th>
+    <td> <%= consultant.other_institution %> </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Other Certificate
+    </th>
+      <td> <%= consultant.other_certificate %>  </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Other Date
+    </th>
+      <td> <%= consultant.other_date %></td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Personal Statement
+    </th>
+    <td> <%= consultant.personal_statement %> </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Hobbies
+    </th>
+      <td> <%= consultant.hobbies %> </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Telephone
+    </th>
+    <td> <%= consultant.telephone %></td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Email
+    </th>
+    <td> <%= consultant.email %> </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Company Name
+    </th>
+    <td> <%= consultant.company_name %></td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Company Business
+    </th>
+    <td> <%= consultant.company_business %></td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Area of Interest
+    </th>
+      <td> <%= consultant.area_of_interest %></td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Registered
+    </th>
+      <td> <%= consultant.registered %> </td>
+  </tr>
+  <tr bgcolor="#FFF">
+    <th>
+      Registration_details
+    </th>
+    <td> <%= consultant.registration_details %> </td>
+  </tr>
+  <tr>
+    <td>
+      <%= link_to 'Show', consultant %>
+    </td>
+
+              <td>
+                  <%= link_to 'Edit', edit_consultant_path(consultant) %>
+                  &nbsp; | <%= link_to 'Destroy', consultant, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </td>
+  </tr>
+<% end %>
+</table>
+</div>
+
+<div class="clearfix"></div>
+<center><%= link_to 'New Consultant', new_consultant_path %></center>
+
+</div>
+
+</section>
+
+
+<section class="testimonies-section">
+
+<div class="container designer" >
+      <div style="margin:50px auto;" class="container">
+     <center>
+         <h3 class="Google-font"> Why Rendzina ? </h3>
+    </center>
+    <p class="justify">
+
+     <p> We are a team of young, energetic, responsive and intuitive thinkers in pursuit of revolutionary changes in our field of endeavor. We work closely with our clients to create the solutions they desire, that suit their intentions and exceed expectations. </p>
+     <p>
+Our theories and perspective of Management and Enterprise Development solutions are fashioned with the specifics of underdeveloped economic issues in mind, which makes us proactive in process, dynamic in delivery offering unscripted assistance to all. Our unique depth of insight spanning from an eclectic knowledge base, unquenchable passion for learning and a positive culture ensures we are the ones to speak to giving a voice to your aspirations. </p>
+<p>
+At Rendzina, we give a holistic approach to Enterprise development and project execution. We consider all the variable factors peculiar to our socio-economic environment to provide clients with bespoke solutions that meet their needs satisfactorily. </p>
+<p>
+We work closely with other organizations within and outside our sector to help provide a wide range of solutions outside our core discipline. We are not afraid to display original thinking and provocative in our novel solutions.
+</p>
+
+    </p>
+
+      </div>
+ </div>
+</section>

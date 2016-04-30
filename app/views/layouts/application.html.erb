@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title><%= content_for?(:title) ? yield(:title) : "Rendzina" %></title>
+        <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rendzina" %>">
+        <%# This is the CSS files %>
+        <%= stylesheet_link_tag "vendor/bootstrap.min" %>
+        <%= stylesheet_link_tag "vendor/bootflat.min" %>
+        <%= stylesheet_link_tag "vendor/font-awesome.min" %>
+        <%= stylesheet_link_tag "vendor/animate" %>
+        <%= stylesheet_link_tag "vendor/css/styles" %>
+        <%= stylesheet_link_tag "slider" %>
+        <%# Javascript Files %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+
+    </head>
+    <body>
+
+      <%# For Navigations %>
+      <div>
+        <%= render 'layouts/navigation_links' %>
+      </div>
+
+      <%# For Pages Content %>
+      <div>
+        <%= render 'layouts/messages' %>
+         <%= yield %>
+      </div>
+
+      <%# Footer Content %>
+      <footer>
+        <%= render 'layouts/footer' %>
+      </footer>
+
+    </body>
+
+    </html>

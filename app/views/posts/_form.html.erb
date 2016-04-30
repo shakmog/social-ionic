@@ -1,0 +1,16 @@
+<%= simple_form_for @post, url: posts_path, html: { multipart: true } do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :title, input_html: { class: "form-control"} %>
+    <%= f.input :message, input_html: { class: "form-control"} %>
+    <%= f.file_field :avatar %>
+    <hr>
+    <%= f.input :author_name, input_html: { class: "form-control"} %>
+    <%= f.file_field :author %>
+  </div>
+<br/>
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-success", style: "width: 30%" %>
+  </div>
+<% end %>

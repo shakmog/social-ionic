@@ -1,0 +1,24 @@
+
+development:
+  adapter: 	postgresql
+  database: rendzina_dev
+  host: 	localhost
+  username: postgres
+  password: admin
+  encoding: utf8
+
+staging:
+  adapter: 	postgresql
+  database: rendzina_stag
+  host: 	localhost
+  username: postgres
+  password: admin
+  encoding: utf8
+
+test:
+  adapter:  postgresql
+  database: rendzina_test
+  host:   localhost
+  username: postgres
+  password: admin
+  encoding: utf8

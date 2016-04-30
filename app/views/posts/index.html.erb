@@ -1,0 +1,96 @@
+
+<section class="slider-section">
+     <div class="image-placeholder">
+
+        <div class="inner-text animated flipInX">
+            <h3> Blog </h3>
+          <span class="navs-social">
+            <a href="#">
+                <i class="fa fa-facebook"></i>
+            </a> &nbsp; &nbsp;
+            <a href="#">
+                <i class="fa fa-twitter"></i>
+            </a>
+            &nbsp; &nbsp;
+            <a href="#">
+                <i class="fa fa-google-plus"></i>
+            </a>
+          </span>
+            <br/><br/>
+            <a href="/aboutus" class="link-design"><b> Read More <i class="fa fa-arrow-circle-down"></i> </b></a> <br/> <br/>
+        </div>
+     </div>
+    <div class="col-md-3">
+
+    </div>
+    <div class="clearfix"></div>
+    <div style="height: 200px;">
+
+    </div>
+</section>
+
+<section class="content-section">
+
+   <div class="container">
+
+   </div>
+
+
+         <div class="container">
+           <center>
+               <h3 class="design">Rendzina Blog <br/><i class="fa fa-arrow-circle-o-down"></i></h3>
+               <hr/>
+
+           </center>
+
+
+           <div class="col-md-4">
+              <%= image_tag "blog", width: "80%" %>
+           </div>
+           <div class="col-md-6">
+           <% @posts.each do |post| %>
+             <h4><%= link_to post.title, post %></h4>
+             <% if post.avatar? %>
+               <%= image_tag post.avatar.url(:medium) %>
+             <% end %>
+             <p><%= truncate post.message %></p>
+               <p><%= image_tag post.author.url(:thumb) %>
+               Written by: <%= post.author_name %></p>
+             <p><%= time_ago_in_words post.created_at %> ago</p>
+             <p><%= post.comments.count %> comments</p>
+             <hr>
+           <% end %>
+
+           <%= link_to 'New Post', new_post_path %>
+         </div>
+         <Div class="clearfix"></div>
+        </div>
+
+
+    </div>
+</section>
+
+
+<section class="testimonies-section">
+
+    <div class="container designer" >
+          <div style="margin:50px auto;" class="container">
+         <center>
+             <h3 class="Google-font">Why Rendzina ? </h3>
+        </center>
+        <p class="justify">
+
+         <p> We are a team of young, energetic, responsive and intuitive thinkers in pursuit of revolutionary changes in our field of endeavor. We work closely with our clients to create the solutions they desire, that suit their intentions and exceed expectations. </p>
+         <p>
+Our theories and perspective of Management and Enterprise Development solutions are fashioned with the specifics of underdeveloped economic issues in mind, which makes us proactive in process, dynamic in delivery offering unscripted assistance to all. Our unique depth of insight spanning from an eclectic knowledge base, unquenchable passion for learning and a positive culture ensures we are the ones to speak to giving a voice to your aspirations. </p>
+<p>
+At Rendzina, we give a holistic approach to Enterprise development and project execution. We consider all the variable factors peculiar to our socio-economic environment to provide clients with bespoke solutions that meet their needs satisfactorily. </p>
+<p>
+We work closely with other organizations within and outside our sector to help provide a wide range of solutions outside our core discipline. We are not afraid to display original thinking and provocative in our novel solutions.
+</p>
+
+        </p>
+
+          </div>
+     </div>
+</section>

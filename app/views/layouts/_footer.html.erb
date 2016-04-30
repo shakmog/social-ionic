@@ -1,0 +1,100 @@
+
+    <div class="container">
+
+        <div class="col-md-3">
+
+            <ul class="footer-links">
+                <li>
+                    <b> Company </b>
+                </li>
+
+                <li>
+                    <a href="<%= aboutus_path %>"> About Us </a>
+                </li>
+                <li>
+                    <a href="blog"> Our Blog </a>
+                </li>
+                <li>
+                   <a href="<%= terms_path %>"> Terms of Use</a>
+               </li>
+                <li>
+                    <a href="<%= privacy_path %>"> Privacy Policy</a>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <div class="col-md-3">
+
+            <ul class="footer-links">
+                <li>
+                    <b>Careers </b>
+                </li>
+                <li>
+                    <a href="#"> Vacancies </a>
+                </li>
+                <li>
+                    <a href="<%= new_associate_path %>"> Associate </a>
+                </li>
+                <li>
+                    <a href="<%= new_consultant_path %>"> Independent Consultant</a>
+                </li>
+                <li>
+                    <a href="#"> Contact Us </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="col-md-5">
+
+            <ul class="footer-links">
+                <li>
+                    <b> <i class="fa fa-info-circle"></i> Contact Us </b>
+                </li>
+                <div>
+
+                  <p class="office-address">
+                    <b> Office Address </b>
+                    <br/>
+                     25, Oduduwa way,<br/>
+                     GRA, Ikeja,<br/>
+                     Lagos.<br/>
+                     <a href="#"><small><b> Send enquiry </b></small></a>
+                  </p>
+
+                    <form class="contact-form" style="display:none">
+                        <div class="col-md-6">
+                          <label> Full Name </label>
+                          <input type="text" class="form-control" name="fname"/>
+                        </div>
+                        <div class="col-md-6">
+                          <label> Email Address </label>
+                          <input type="text" class="form-control" name="email" />
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-12">
+                        <label> Content </label>
+                        <textarea class="form-control" name="content"></textarea>
+                        <br/>
+                        <a href="#" class="hide-me"><small> Hide enquiry </small></a>
+                        <button class="btn btn-success btn-sm pull-right"><i class="fa fa-send-o"></i> Send</button>
+
+                        </div>
+                    </form>
+                </div>
+
+            </ul>
+
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="bg-color-black">
+
+        <center>
+            <small><b class="base-footer"> Powered By Rendzina LTD <%= Date.today.year %> </b></small>
+        </center>
+    </div>

@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  surname: MyString
+  other_names: MyString
+  dob: 2016-04-25
+  contact_add: MyText
+  sec_institution: MyString
+  sec_certificate: MyString
+  sec_date: 2016-04-25
+  uni_institution: MyString
+  uni_certificate: MyString
+  uni_date: 2016-04-25
+  other_institution: MyString
+  other_certificate: MyString
+  other_date: 2016-04-25
+  personal_statement: MyText
+  hobbies: MyText
+  telephone: MyString
+  email: MyString
+  company_name: MyString
+  company_business: MyString
+  area_of_interest: MyText
+  registered: false
+  registration_details: MyString
+
+two:
+  surname: MyString
+  other_names: MyString
+  dob: 2016-04-25
+  contact_add: MyText
+  sec_institution: MyString
+  sec_certificate: MyString
+  sec_date: 2016-04-25
+  uni_institution: MyString
+  uni_certificate: MyString
+  uni_date: 2016-04-25
+  other_institution: MyString
+  other_certificate: MyString
+  other_date: 2016-04-25
+  personal_statement: MyText
+  hobbies: MyText
+  telephone: MyString
+  email: MyString
+  company_name: MyString
+  company_business: MyString
+  area_of_interest: MyText
+  registered: false
+  registration_details: MyString

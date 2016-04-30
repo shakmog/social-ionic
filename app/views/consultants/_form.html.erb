@@ -1,0 +1,32 @@
+<%= simple_form_for(@consultant) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :surname, input_html: { class: "form-control"} %>
+    <%= f.input :other_names, input_html: { class: "form-control"} %>
+    <%= f.input :dob, input_html:{ style: "padding: 10px;margin-top: 10px;width:25%"} %> <br/>
+    <%= f.input :contact_add, input_html: { class: "form-control"} %>
+    <%= f.input :sec_institution, input_html: { class: "form-control"} %>
+    <%= f.input :sec_certificate, input_html: { class: "form-control"} %>
+    <%= f.input :sec_date, input_html:{ style: "padding: 10px;margin-top: 10px;width:25%"} %><br/>
+    <%= f.input :uni_institution, input_html: { class: "form-control"} %>
+    <%= f.input :uni_certificate, input_html: { class: "form-control"} %>
+    <%= f.input :uni_date, input_html:{ style: "padding: 10px;margin-top: 10px;width:25%"} %><br/>
+    <%= f.input :other_institution, input_html: { class: "form-control"} %>
+    <%= f.input :other_certificate, input_html: { class: "form-control"} %>
+    <%= f.input :other_date, input_html:{ style: "padding: 10px;margin-top: 10px;width:25%"} %><br/>
+    <%= f.input :personal_statement, input_html: { class: "form-control"} %>
+    <%= f.input :hobbies, input_html: { class: "form-control"} %>
+    <%= f.input :telephone, input_html: { class: "form-control"} %>
+    <%= f.input :email, input_html: { class: "form-control"} %>
+    <%= f.input :company_name, input_html: { class: "form-control"} %>
+    <%= f.input :company_business, input_html: { class: "form-control"} %>
+    <%= f.input :area_of_interest, input_html: { class: "form-control"} %>
+    <%= f.input :registered %>
+    <%= f.input :registration_details, input_html: { class: "form-control"} %>
+  </div>
+<br/>
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-success", style: "width: 40%" %>
+  </div>
+<% end %>
