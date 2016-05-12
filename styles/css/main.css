@@ -1,0 +1,174 @@
+body {
+  background: #000;
+  background-size: 100%; }
+
+@font-face {
+  font-family: 'Sans';
+  src: url("fonts/Alegreya Sans 300.ttf"); }
+@font-face {
+  font-family: 'Lato-text';
+  src: url("fonts/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff"); }
+.text-center, .section-two .board1 {
+  text-align: center; }
+
+.section-one {
+  background: url("../../images/slider1.jpg") fixed no-repeat;
+  background-size: 100%; }
+  .section-one .transparency {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); }
+  .section-one .content-top {
+    background: rgba(0, 172, 119, 0.6); }
+    .section-one .content-top a {
+      color: #FFF;
+      padding-right: 8px; }
+      .section-one .content-top a:hover {
+        color: lightblue; }
+    .section-one .content-top .account-bar a {
+      font-size: 13px;
+      font-family: 'Lato-text';
+      font-weight: bold; }
+  .section-one .inside-section-one h1 {
+    font-family: 'Sans';
+    margin-bottom: 0px;
+    padding-top: 20px;
+    color: #f03d4e; }
+    .section-one .inside-section-one h1 span {
+      color: rgba(0, 172, 119, 0.5); }
+  .section-one .inside-section-one p {
+    color: #ccc;
+    font-weight: normal;
+    font-size: 13px; }
+  .section-one .inside-section-one .search-context {
+    margin-top: 50px; }
+    .section-one .inside-section-one .search-context input[type=text] {
+      display: block;
+      padding: 5px;
+      border: 0px;
+      border-bottom: 2px solid #ccc;
+      background: transparent;
+      margin-top: 10px; }
+  .section-one .inside-section-one nav {
+    margin-bottom: 1px !important;
+    border-radius: 0px !important;
+    background: #f03d4e; }
+    .section-one .inside-section-one nav ul li {
+      font-family: 'Lato-text'; }
+      .section-one .inside-section-one nav ul li a {
+        color: #FFF; }
+        .section-one .inside-section-one nav ul li a:hover {
+          color: #000; }
+  .section-one .inside-section-one .sub-nav nav {
+    background: url("../../images/sub-nav.jpg"); }
+    .section-one .inside-section-one .sub-nav nav ul li.act {
+      background: rgba(0, 0, 0, 0.5) !important; }
+      .section-one .inside-section-one .sub-nav nav ul li.act a {
+        color: #FFF !important; }
+    .section-one .inside-section-one .sub-nav nav ul li a {
+      color: #666; }
+      .section-one .inside-section-one .sub-nav nav ul li a:hover {
+        color: #FFF; }
+    .section-one .inside-section-one .sub-nav nav ul li:hover {
+      background: rgba(0, 172, 119, 0.5);
+      color: #000 !important; }
+  .section-one .inside-section-one .slide-container {
+    background: #FFF; }
+    .section-one .inside-section-one .slide-container .slideshow {
+      background: url("../../images/goal/kelechi-iheanacho_uvb7vsldx4551twb4963u9v2w.jpg");
+      min-height: 350px;
+      border: 4px solid #FFF; }
+      .section-one .inside-section-one .slide-container .slideshow h3 {
+        color: #FFF;
+        font-family: 'Sans'; }
+    .section-one .inside-section-one .slide-container .head-lines {
+      padding: 0px; }
+      .section-one .inside-section-one .slide-container .head-lines .list-group {
+        margin-right: 0px !important;
+        margin-bottom: 0px !important; }
+        .section-one .inside-section-one .slide-container .head-lines .list-group .disabled {
+          background: #000 !important;
+          color: #f03d4e;
+          font-size: 18px !important; }
+        .section-one .inside-section-one .slide-container .head-lines .list-group .list-group-item {
+          border-left: transparent;
+          font-size: 14px;
+          padding: 5px;
+          font-weight: bold;
+          font-size: 12px; }
+          .section-one .inside-section-one .slide-container .head-lines .list-group .list-group-item span b {
+            background: #000;
+            padding: 2px;
+            color: #FFF; }
+      .section-one .inside-section-one .slide-container .head-lines .list-group-item:last-child {
+        margin-bottom: 0;
+        border-bottom-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important; }
+      .section-one .inside-section-one .slide-container .head-lines .list-group-item:first-child {
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important; }
+      .section-one .inside-section-one .slide-container .head-lines b {
+        font-family: 'Lato-text'; }
+      .section-one .inside-section-one .slide-container .head-lines p {
+        color: #666; }
+
+.section-two {
+  margin-top: 5px;
+  background: url("../../images/goal/ad.jpg"); }
+  .section-two .inner-section-two {
+    background: #FFF; }
+  .section-two .col {
+    background: #FFF;
+    min-height: 100px;
+    border-top: 2px solid #f03d4e; }
+  .section-two .board1 {
+    width: 50%;
+    padding: 5px;
+    background: #f03d4e;
+    font-family: 'Lato-text'; }
+    .section-two .board1 h5 {
+      font-size: .9em;
+      color: #333; }
+  .section-two .imagex {
+    padding-right: 3px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ccc; }
+  .section-two p {
+    color: #000;
+    font-weight: normal;
+    font-family: arial, 'Lato-text';
+    font-size: 14px; }
+
+.section-story h5 {
+  font-family: 'Sans', arial;
+  color: #f03d4e; }
+
+.section-notify {
+  background: rgba(0, 172, 119, 0.9); }
+  .section-notify .container .alert-warning {
+    background: #ff8201 !important;
+    color: #FFF;
+    font-family: 'Lato-text'; }
+    .section-notify .container .alert-warning span {
+      color: #000; }
+  .section-notify .container .alert {
+    padding: 10px;
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important; }
+
+.section-three {
+  padding: 50px;
+  background: #f03d4e;
+  color: #FFF; }
+
+.ft {
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
+  font-family: arial,helvetica; }
+
+/*# sourceMappingURL=main.css.map */
