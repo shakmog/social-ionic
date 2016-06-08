@@ -1,0 +1,291 @@
+$body-bg: #000;
+$sec-one-bg: #000;
+$main-color: #e600d4;
+$content-top: #f03d4e;
+$white: #FFF;
+$grey: #ccc;
+$black: #000;
+$green: #00ac77;
+
+body{
+  background:$black;
+  background-size: 100%;
+}
+
+@font-face {
+  font-family: 'Sans';
+  src: url('fonts/Alegreya Sans 300.ttf');
+}
+
+@font-face {
+  font-family: 'Lato-text';
+  src: url('fonts/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff');
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-one{
+  background: url('../../images/slider1.jpg') fixed no-repeat;
+  background-size: 100%;
+
+  .transparency{
+    width: 100%;
+    height: 100%;
+    background: rgba(black, 0.8);
+  }
+  .content-top {
+    background: rgba($green, 0.6);
+
+    a {
+      color: $white;
+      padding-right: 8px;
+
+      &:hover{
+        color: lightblue;
+      }
+    }
+
+    .account-bar {
+      a{
+        font-size: 13px;
+        font-family: 'Lato-text';
+        font-weight: bold;
+      }
+    }
+  }
+
+  .inside-section-one {
+    h1{
+      font-family: 'Sans';
+      margin-bottom: 0px;
+      padding-top: 20px;
+      color: $content-top;
+
+      sup{
+
+      }
+
+      span{
+        color: rgba($green, 0.5);
+      }
+    }
+    p{
+      color: $grey;
+      font-weight: normal;
+      font-size: 13px;
+    }
+
+    .search-context {
+      margin-top: 50px;
+
+      input[type=text] {
+        display: block;
+        padding: 5px;
+        border: 0px;
+        border-bottom: 2px solid #ccc;
+        background: transparent;
+        margin-top: 10px;
+      }
+    }
+
+    nav {
+      margin-bottom: 1px !important;
+      border-radius: 0px !important;
+      background: $content-top;
+
+      ul{
+        li{
+          font-family: 'Lato-text';
+          a{
+            color: $white;
+            &:hover {
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+
+
+
+.sub-nav {
+
+  nav {
+    background: url('../../images/sub-nav.jpg');
+
+    ul{
+      li{
+        &.act{
+          background: rgba($black, 0.5) !important;
+          a{
+            color: $white !important;
+          }
+        }
+        a{
+          color: #666;
+         &:hover{
+           color: #FFF;
+         }
+        }
+        &:hover{
+          background: rgba($green, 0.5);
+          color: $black !important;
+        }
+      }
+    }
+  }
+}
+
+    .slide-container{
+      background: $white;
+
+      .slideshow{
+        background: url('../../images/goal/kelechi-iheanacho_uvb7vsldx4551twb4963u9v2w.jpg');
+        min-height: 350px;
+        border: 4px solid #FFF;
+        h3{
+          color: #FFF;
+          font-family: 'Sans';
+        }
+      }
+      .head-lines {
+        padding: 0px;
+
+        .list-group{
+          margin-right: 0px !important;
+          margin-bottom: 0px !important;
+
+          .disabled {
+            background: $black !important;
+            color: $content-top;
+            font-size: 18px !important;
+          }
+
+          .list-group-item {
+            border-left: transparent;
+            font-size: 14px;
+            padding: 5px;
+            font-weight: bold;
+            font-size: 12px;
+
+            span {
+              b{
+                background: $black;
+                padding: 2px;
+                color: $white;
+              }
+            }
+          }
+        }
+
+        .list-group-item:last-child {
+        	margin-bottom: 0;
+        	border-bottom-right-radius: 0px !important;
+        	border-bottom-left-radius: 0px !important;
+        }
+
+        .list-group-item:first-child {
+        	border-top-left-radius: 0px !important;
+        	border-top-right-radius: 0px !important;
+        }
+
+        b{
+          font-family: 'Lato-text';
+        }
+
+        p{
+          color: #666;
+        }
+      }
+    }
+  }
+}
+
+.section-two {
+  margin-top: 5px;
+  background:  url('../../images/goal/ad.jpg') ;
+
+  .inner-section-two{
+    background: $white;
+  }
+
+  .col {
+    background: #FFF;
+    min-height: 100px;
+    border-top: 2px solid $content-top;
+  }
+
+  .board1{
+    width: 50%;
+    padding: 5px;
+    background: $content-top;
+    font-family: 'Lato-text';
+    @extend .text-center;
+
+    h5{
+      font-size: .9em;
+      color: #333;
+    }
+  }
+
+  .imagex {
+    padding-right: 3px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid $grey;
+  }
+
+  p{
+    color: #000;
+    font-weight: normal;
+    font-family: arial, 'Lato-text';
+    font-size: 14px;
+  }
+}
+
+.section-story {
+
+  h5{
+    font-family: 'Sans', arial;
+    color: $content-top;
+  }
+
+}
+
+.section-notify{
+  background: rgba($green, 0.9);
+  .container {
+    .alert-warning{
+      background: #ff8201 !important;
+      color: $white;
+      font-family: 'Lato-text';
+
+      span{
+        color: $black;
+      }
+    }
+    .alert{
+      padding: 10px;
+      border-bottom-left-radius: 8px !important;
+      border-bottom-right-radius: 8px !important;
+      border-top-right-radius: 0px !important;
+      border-top-left-radius: 0px !important;
+    }
+ }
+}
+
+.section-three {
+  padding: 50px;
+  background: $content-top;
+  color: $white;
+}
+
+.ft {
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
+  font-family: arial,helvetica;
+}
