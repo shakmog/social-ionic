@@ -15,3 +15,9 @@
 //= require rendzinacapital
 //= require pureSlider
 //= require app
+//= require jquery-ui
+
+
+$(function() {
+	$( "#associate_dob, #associate_sec_date, #associate_uni_date, #associate_other_date" ).datepicker();
+});
