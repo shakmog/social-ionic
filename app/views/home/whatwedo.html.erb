@@ -63,7 +63,7 @@
            <div class="col-md-4">
              <%= link_to whatwedo_social_path do %>
                  <div class="circle-image">
-                    <%= image_tag "2", width:"100%" %>
+                    <%= image_tag "networking", width:"100%", style:"height: 100%" %>
                  </div>
                  <h4 class="design center"> Networking </h4>
                <% end %>
@@ -71,7 +71,7 @@
                  The Rendzina LTD has as one of its principal functions the art of creating networking events that help entrepreneurs increase their businesses through structured..
                </p>
                <center>
-                 <%= link_to whatwedo_social_path, class: "btn btn-danger btn-sm" do %>
+                 <%= link_to whatwedo_social_path, class: "btn btn-warning btn-sm" do %>
                  Read More <i class="fa fa-arrow-circle-right"></i>
                <% end %>
              </center>
@@ -80,7 +80,7 @@
            <div class="col-md-4">
              <%= link_to whatwedo_consulting_path do %>
                  <div class="circle-image">
-                    <%= image_tag "2", width:"100%" %>
+                    <%= image_tag "IMG-20160510-WA0002", width:"100%", style:"height:100%" %>
                  </div>
                  <h4 class="design center"> Consulting </h4>
              <% end %>
@@ -97,7 +97,7 @@
            <div class="col-md-4">
              <%= link_to whatwedo_technology_path do %>
                <div class="circle-image">
-                  <%= image_tag "2", width:"100%" %>
+                  <%= image_tag "IMG-20160510-WA0005", width:"100%", style: "height: 100%" %>
                </div>
                 <h4 class="design center"> Technology </h4>
             <% end %>
@@ -118,19 +118,29 @@
         <%# -- This is the new section for other services %>
 
         <div class="rows container links">
+
            <div class="col-md-4">
              <%= link_to whatwedo_government_path do %>
-                 <div class="circle-image">
-                    <%= image_tag "government", width:"100%" %>
-                 </div>
-                 <h4 class="design center"> Governance As An Enterprise </h4>
-              <% end %>
+               <div class="circle-image">
+                  <%= image_tag "government", width:"100%" %>
+               </div>
+                <h4 class="design center"> Governance As An Enterprise  </h4>
+            <% end %>
+            <p class="center">
+               Today’s service-based economy is fundamentally dependent on IT. Through these computer-based systems, the critical interactions at the heart of service delivery are defined, managed, recorded, and governed. Furthermore, in recent years...
+            </p>
+            <center>
+              <%= link_to whatwedo_technology_path, class: "btn btn-success btn-sm" do %>
+              Read More <i class="fa fa-arrow-circle-right"></i>
+            <% end %>
+          </center>
            </div>
+
 
            <div class="col-md-4">
              <%= link_to '#' do %>
                  <div class="circle-image">
-                    <%= image_tag "2", width:"100%" %>
+                    <%= image_tag "our_people", width:"100%" %>
                  </div>
                  <h4 class="design center"> R.E.M.S </h4>
              <% end %>
@@ -139,7 +149,7 @@
            <div class="col-md-4">
              <%= link_to root_path do %>
                <div class="circle-image">
-                  <%= image_tag "2", width:"100%" %>
+                  <%= image_tag "IMG-20160510-WA0004", width:"100%", style: "height: 100%" %>
                </div>
                 <h4 class="design center"> Digital Revolution </h4>
             <% end %>

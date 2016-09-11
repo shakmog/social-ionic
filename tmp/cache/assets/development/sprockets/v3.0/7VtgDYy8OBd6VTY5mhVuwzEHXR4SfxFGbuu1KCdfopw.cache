@@ -1,0 +1,17 @@
+I"¡(function() {
+  $(function() {
+    $('.office-address > a').click(function() {
+      $('.office-address').toggle('slow');
+      $('.contact-form').toggle('slow');
+      return false;
+    });
+    return $('.send_enq').click(function(e) {
+      e.preventDefault();
+      window.scrollTo(10, 2000);
+      $('.office-address').toggle('slow');
+      return $('.contact-form').toggle('slow');
+    });
+  });
+
+}).call(this);
+:ET

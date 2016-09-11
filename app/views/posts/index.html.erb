@@ -28,7 +28,12 @@
 
     </div>
 </section>
-
+<div class="real-time-contact">
+              <h4 class="design" style="padding:0px;margin:0px;"> Contact: </h4><i class="fa fa-phone"></i> <b>+234-90-54-66-0000</b><br/>
+              <%= link_to root_path, class: 'send_enq' do %>
+                 <font class="color-green"><i class="fa fa-envelope-o"></i> Send Enquiry</font>
+              <% end %>
+        </div>
 <section class="content-section">
 
    <div class="container">
@@ -38,16 +43,33 @@
 
          <div class="container">
            <center>
-               <h3 class="design">Rendzina Blog <br/><i class="fa fa-arrow-circle-o-down"></i></h3>
+               <h3 class="design">The Business Reformer <br/><i class="fa fa-arrow-circle-o-down"></i></h3>
                <hr/>
 
            </center>
 
 
-           <div class="col-md-4">
-              <%= image_tag "blog", width: "80%" %>
+           <div class="col-md-3">
+               <%= link_to whatwedo_social_path do %>
+           <div class="circle-image">
+              <%= image_tag "networking", width:"100%", style:"height: 100%" %>
+           </div>
+           <h4 class="design center"> Networking </h4>
+           <% end %>
+
+           <%= link_to whatwedo_consulting_path do %>
+               <div class="circle-image">
+                  <%= image_tag "IMG-20160510-WA0002", width:"100%", style:"height:100%" %>
+               </div>
+               <h4 class="design center"> Consulting </h4>
+           <% end %>
+           
            </div>
            <div class="col-md-6">
+               <center><%= image_tag "blog", width: "60%" %> </center>
+            <%= link_to new_post_path, class: "btn btn-success btn-lg" do %>
+             <b><i class="fa fa-plus-circle"></i> New Post </b>
+            <% end %>
            <% @posts.each do |post| %>
              <h4><%= link_to post.title, post %></h4>
              <% if post.avatar? %>
@@ -61,7 +83,22 @@
              <hr>
            <% end %>
 
-           <%= link_to 'New Post', new_post_path %>
+          
+         </div>
+         <div class="col-md-3">
+          <%= link_to whatwedo_organic_path do %>
+           <div class="circle-image">
+              <%= image_tag "organic_plan", width:"100%" %>
+           </div>
+           <h4 class="design center"> Organic Plan </h4>
+           <% end %>
+
+           <%= link_to whatwedo_technology_path do %>
+               <div class="circle-image">
+                  <%= image_tag "IMG-20160510-WA0005", width:"100%", style: "height: 100%" %>
+               </div>
+               <h4 class="design center"> Technology </h4>
+           <% end %>
          </div>
          <Div class="clearfix"></div>
         </div>

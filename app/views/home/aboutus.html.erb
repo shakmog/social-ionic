@@ -28,7 +28,12 @@
 
     </div>
 </section>
-
+<div class="real-time-contact">
+              <h4 class="design" style="padding:0px;margin:0px;"> Contact: </h4><i class="fa fa-phone"></i> <b>+234-90-54-66-0000</b><br/>
+              <%= link_to root_path, class: 'send_enq' do %>
+                 <font class="color-green"><i class="fa fa-envelope-o"></i> Send Enquiry</font>
+              <% end %>
+        </div>
 <section class="content-section">
 
    <div class="container">
@@ -42,7 +47,7 @@
                <hr/>
            </center>
 
-
+        
            <p class="justify">Rendzina Ltd is an Enterprise Development and Consulting company established to foster Entrepreneurship and develop globally competitive Enterprises.</p>
 
            <p>We are positioned to assist entrepreneurs, organizations and governments develop better processes, provide superior resources and improved systems that advance the level of efficiency and productivity. We help to build enterprises that valuably serve the purpose for which they were intended.</p>
@@ -50,7 +55,26 @@
            <p>Rendzina helps clients in diverse industries improve performance, transform the enterprise, reduce costs, leverage technology, process and review large amounts of complex data, address regulatory changes, recover from distress and stimulate growth. Our professionals employ their expertise in finance, operations, strategy, analytics, and technology to provide our clients with specialized analyses and customized advice and solutions that are tailored to address each client's particular challenges and opportunities to deliver sustainable and measurable results.
            </p>
 
-           <section style="background: #ddd">
+           <section class="how-we-do">
+            <div class="col-md-5" style="padding-left:0px;">
+              <%= image_tag "ant", width: "100%" %>
+            </div>
+            <div class="col-md-7">
+             <h4 class="design"> How we do it</h4>
+             <p>
+             We have carefully chosen to build our business operational strategy around a set of values that allow for congruent emphasis and deliberate intention in all our work. So we choose to work with the ANTS model where there is an expression of the elements of our core values represented in all our tasks using the character of the “ants” as guiding principles for all our actions. 
+             </p>
+             <p>
+ As a team of intelligent, versatile, innovative &amp; hard-working professionals digitally enabled to deliver services to clients anywhere in Africa.
+Be it rain or shine, the ants go about gathering food with the same determination. Despite no supervision, they go about their job with little or no confusion. There is an unspoken trust amongst the species that gets them to co-exist happily in any condition. 
+At Rendzina LTD, we have adopted that celebrated TRUST as our core discipline.  
+
+             </p>
+            </div>
+            <div class="clearfix"></div>
+           </section>
+
+           <section class="vision">
            <div class="col-md-5" style="padding:0px !important">
              <%= image_tag "mission-1618x900", width: "100%" %>
            </div>
@@ -60,11 +84,12 @@
 
            <p>We are Africa's leading organization developing<br/> globally competitive entrepreneurs and Enterprises.
            </p>
-         </div> <div class="clearfix"></div>
+         </div>
+         <div class="clearfix"></div>
        </section>
 
        <section style="border-bottom: 2px solid yellowgreen">
-         <div class="col-md-5">
+         <div class="col-md-8">
            <br/><br/>
            <h4 class="design">Our Mission</h4>
 
@@ -72,8 +97,8 @@
            </p>
          </div>
 
-         <div class="col-md-5">
-          <%= image_tag "mission", align: "right", width: "300px" %>
+         <div class="col-md-4" style="padding-right: 0px;">
+          <%= image_tag "mission.png", align: "right", width: "300px" %>
          </div>
          <div class="clearfix"></div>
        </section>

@@ -75,6 +75,13 @@ body {
 }
 
 
+.how-we-do {
+  background: #d7b961;
+  border-bottom: 4px solid #555;
+  padding-bottom: 20px;
+}
+
+
 
 
 .circle-small {
@@ -327,8 +334,18 @@ footer {
 .mission-style{
   border-top: 2px solid #999;
   margin-top: 30px;
+  background: url('../../../assets/why_rendzina.jpg');
+}
+
+.transparent{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
   padding-bottom: 30px;
-  background: #000;
+}
+
+.vision {
+  background: #ddd url('../../../assets/vision1.jpg') no-repeat bottom right;
 }
 
 .mission-style p {
